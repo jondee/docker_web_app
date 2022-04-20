@@ -21,10 +21,15 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		
+		<!-- sonar dependencies 
 		<sonar.host.url>http:192.168.108.154:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password>
+		<sonar.password>admin</sonar.password> -->
+
+        <!-- sonar dependencies -->
+		<sonar.host.url>http://192.168.108.138:5000//</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin123</sonar.password>  
 		
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -99,13 +104,16 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://192.168.108.139:8081/repository/docker_jenkins_release/</url>
+	      <!-- <url>http://192.168.108.139:8081/repository/docker_jenkins_release/</url> -->
+          <url>http://192.168.108.138:4000/repository/docker_jenkins_release/</url>  
+          
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://192.168.108.139:8081/repository/docker_jenkins_snapshot/</url>
+	      <!--<url>http://192.168.108.139:8081/repository/docker_jenkins_snapshot/</url> -->
+            <url>http://192.168.108.138:4000/repository/docker_jenkins_snapshot/</url>  
 	    </snapshotRepository>
 	    
 	</distributionManagement>

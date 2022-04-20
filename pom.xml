@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url> http://192.168.108.155:8888/repository/ebay-bts-releases/</url>
+	      <url>http://192.168.108.139:8081/repository/docker_jenkins_release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://192.168.108.155:8888/repository/ebay-bts-snapshot/</url>
+	      <url>http://192.168.108.139:8081/repository/docker_jenkins_snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
